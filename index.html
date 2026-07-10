@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accord — a clean space to chat with the world's best AI models. GPT, Claude, Gemini, Grok, DeepSeek and more.">
+  <meta name="theme-color" content="#000000">
+  <title>Accord — Multi-Model AI Chat</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="brand">
+          <img src="logo.png" alt="" width="28" height="28">
+          <span>Accord</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main">
+          <a href="#features">Features</a>
+          <a href="#models">Models</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <img class="hero__logo reveal" src="logo.png" alt="Accord" width="56" height="56">
+          <h1 class="reveal">One chat.<br>Every model.</h1>
+          <p class="hero__subtitle reveal">
+            A clean space to chat with GPT, Claude, Gemini, Grok, DeepSeek, and more.
+            Switch models mid-conversation without losing context.
+          </p>
+          <div class="hero__actions reveal">
+            <!-- Replace href with your App Store URL when live -->
+            <a class="btn btn--primary" href="#" id="app-store-link">Download on the App Store</a>
+            <a class="btn btn--ghost" href="support.html">Help &amp; Support</a>
+          </div>
+
+          <div class="chat-preview reveal" aria-hidden="true">
+            <div class="chat-preview__header">
+              <span class="model-pill" id="demo-pill">
+                <span class="model-pill__dot"></span>
+                <span id="demo-model">DeepSeek V4 Flash</span>
+              </span>
+              <span style="font-size:12px;color:var(--text-tertiary)">42% · 34k / 80k</span>
+            </div>
+            <div class="bubble bubble--user">What's the best way to compare two AI models?</div>
+            <div class="bubble bubble--ai">
+              Run the same prompt on both, then read the answers side by side.
+              Accord lets you switch models without losing the thread.
+              <span class="cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <p class="section__label reveal">Features</p>
+          <h2 class="reveal">Built for how you actually use AI</h2>
+          <div class="feature-grid">
+            <article class="feature-card card reveal">
+              <h3>Switch anytime</h3>
+              <p>Change models mid-conversation. Your context carries over so you can compare answers without starting over.</p>
+            </article>
+            <article class="feature-card card reveal">
+              <h3>Debate &amp; compare</h3>
+              <p>Put multiple models in a room. Run side-by-side comparisons or let agents debate until they reach consensus.</p>
+            </article>
+            <article class="feature-card card reveal">
+              <h3>Private when you need it</h3>
+              <p>Chats are encrypted on your device. Optional Face ID lock. No account required — your history stays local.</p>
+            </article>
+            <article class="feature-card card reveal">
+              <h3>Voice &amp; vision</h3>
+              <p>Dictate messages, attach photos, and use vision-capable models when you need to analyze images.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="models" style="padding-top:0">
+        <div class="container">
+          <p class="section__label reveal">Models</p>
+          <h2 class="reveal">Five providers. One app.</h2>
+          <div class="brand-grid reveal" id="brand-grid">
+            <!-- populated by main.js -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="plans" style="padding-top:0">
+        <div class="container">
+          <p class="section__label reveal">Plans</p>
+          <h2 class="reveal">Start free. Scale when you need more.</h2>
+          <div class="tier-grid">
+            <article class="tier-card card reveal">
+              <h3>Free</h3>
+              <p class="tier-card__price">$0</p>
+              <p>2 models per brand, 80k tokens/day. Core chat on every provider.</p>
+            </article>
+            <article class="tier-card card reveal">
+              <h3>Starter</h3>
+              <p class="tier-card__price">$4.99/mo</p>
+              <p>More models unlocked, 150k tokens/day, web search on supported tiers.</p>
+            </article>
+            <article class="tier-card card reveal">
+              <h3>Pro &amp; beyond</h3>
+              <p class="tier-card__price">From $24.99/mo</p>
+              <p>Frontier models, debate-ready limits, and up to 20M tokens/day on Max.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <nav class="site-footer__links" aria-label="Legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="support.html">Support</a>
+          <a href="mailto:feedback@accord.chat">feedback@accord.chat</a>
+        </nav>
+        <p class="site-footer__copy">&copy; <span id="year"></span> Accord</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
