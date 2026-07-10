@@ -48,16 +48,18 @@
           <div class="chat-preview reveal" aria-hidden="true">
             <div class="chat-preview__header">
               <span class="model-pill" id="demo-pill">
-                <span class="model-pill__dot"></span>
-                <span id="demo-model">DeepSeek V4 Flash</span>
+                <span id="demo-model">Claude Haiku 4.5</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </span>
-              <span style="font-size:12px;color:var(--text-tertiary)">42% · 34k / 80k</span>
             </div>
-            <div class="bubble bubble--user">What's the best way to compare two AI models?</div>
-            <div class="bubble bubble--ai">
-              Run the same prompt on both, then read the answers side by side.
-              Accord lets you switch models without losing the thread.
-              <span class="cursor"></span>
+            <div class="chat-thread">
+              <div class="bubble bubble--user">Explain quantum entanglement in one sentence.</div>
+              <div class="bubble bubble--ai">Two particles become linked so that measuring one instantly determines the state of the other, no matter how far apart they are.</div>
+              <div class="chat-switch"><span>Switched to Claude Haiku 4.5</span></div>
+              <div class="bubble bubble--user">Nice — now give me a real-world analogy I can actually picture.</div>
+              <div class="bubble bubble--ai">Think of two coins flipped into sealed boxes and shipped across the world: the instant you open one and see heads, you know the other is tails.<span class="cursor"></span></div>
             </div>
           </div>
         </div>
@@ -65,35 +67,135 @@
 
       <section class="section" id="features">
         <div class="container">
-          <p class="section__label reveal">Features</p>
-          <h2 class="reveal">Built for how you actually use AI</h2>
-          <div class="feature-grid">
-            <article class="feature-card card reveal">
-              <h3>Switch anytime</h3>
-              <p>Change models mid-conversation. Your context carries over so you can compare answers without starting over.</p>
-            </article>
-            <article class="feature-card card reveal">
-              <h3>Debate &amp; compare</h3>
-              <p>Put multiple models in a room. Run side-by-side comparisons or let agents debate until they reach consensus.</p>
-            </article>
-            <article class="feature-card card reveal">
-              <h3>Private when you need it</h3>
-              <p>Chats are encrypted on your device. Optional Face ID lock. No account required — your history stays local.</p>
-            </article>
-            <article class="feature-card card reveal">
-              <h3>Voice &amp; vision</h3>
-              <p>Dictate messages, attach photos, and use vision-capable models when you need to analyze images.</p>
-            </article>
-          </div>
+          <p class="section__label reveal">Why Accord</p>
+          <h2 class="reveal">Everything you need, nothing you don't</h2>
+          <ol class="feature-list">
+            <li class="feature-item reveal">
+              <span class="feature-item__num">01</span>
+              <div class="feature-item__body">
+                <h3>Switch models mid-chat</h3>
+                <p>Move between GPT, Claude, Gemini, Grok, and DeepSeek without losing the thread. Your context carries over every time.</p>
+              </div>
+            </li>
+            <li class="feature-item reveal">
+              <span class="feature-item__num">02</span>
+              <div class="feature-item__body">
+                <h3>Debate &amp; compare</h3>
+                <p>Put multiple models in one room. Run answers side by side or let agents debate until they reach a consensus.</p>
+              </div>
+            </li>
+            <li class="feature-item reveal">
+              <span class="feature-item__num">03</span>
+              <div class="feature-item__body">
+                <h3>Private by default</h3>
+                <p>Chats are encrypted on your device with an optional Face ID lock. No account required — your history stays local.</p>
+              </div>
+            </li>
+            <li class="feature-item reveal">
+              <span class="feature-item__num">04</span>
+              <div class="feature-item__body">
+                <h3>Voice &amp; vision</h3>
+                <p>Dictate messages, attach photos, and hand images to vision-capable models when you need more than text.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
       <section class="section" id="models" style="padding-top:0">
         <div class="container">
           <p class="section__label reveal">Models</p>
-          <h2 class="reveal">Five providers. One app.</h2>
-          <div class="brand-grid reveal" id="brand-grid">
-            <!-- populated by main.js -->
+          <h2 class="reveal">Five providers. 58 models.</h2>
+          <div class="brand-grid" id="brand-grid">
+
+            <div class="brand-row card card--elevated">
+              <span class="brand-row__name">DeepSeek · 10</span>
+              <div class="brand-row__chips">
+                <span class="chip chip--free">DeepSeek V4 Flash · Free</span>
+                <span class="chip">DeepSeek V4 Flash Think</span>
+                <span class="chip">DeepSeek V4 Flash Think Max</span>
+                <span class="chip">DeepSeek V4 Pro</span>
+                <span class="chip">DeepSeek V4 Pro Think</span>
+                <span class="chip">DeepSeek V4 Pro Think Max</span>
+                <span class="chip chip--free">DeepSeek V3 · Free</span>
+                <span class="chip">DeepSeek R1</span>
+                <span class="chip">DeepSeek R1-0528</span>
+                <span class="chip">DeepSeek Coder V2</span>
+              </div>
+            </div>
+
+            <div class="brand-row card card--elevated">
+              <span class="brand-row__name">Google AI · 16</span>
+              <div class="brand-row__chips">
+                <span class="chip">Gemini 2.5 Flash-Lite Preview</span>
+                <span class="chip">Gemini 3.1 Flash-Lite Preview</span>
+                <span class="chip chip--free">Gemini 2.5 Flash-Lite · Free</span>
+                <span class="chip">Gemini 3.1 Flash-Lite</span>
+                <span class="chip chip--free">Gemini 2.5 Flash · Free</span>
+                <span class="chip">Gemini 2.5 Flash Preview</span>
+                <span class="chip">Gemini 2.5 Pro</span>
+                <span class="chip">Gemini 2.0 Flash</span>
+                <span class="chip">Gemini 3 Flash</span>
+                <span class="chip">Gemini 3 Pro</span>
+                <span class="chip">Gemini 3.1 Pro</span>
+                <span class="chip">Gemini 2.5 Flash Image</span>
+                <span class="chip">Gemini 2.5 Computer Use</span>
+                <span class="chip">Gemini 3 Pro Image</span>
+                <span class="chip">Gemini 3.1 Flash Image</span>
+                <span class="chip">Gemini 3.5 Flash</span>
+              </div>
+            </div>
+
+            <div class="brand-row card card--elevated">
+              <span class="brand-row__name">xAI · 8</span>
+              <div class="brand-row__chips">
+                <span class="chip chip--free">Grok 4 Fast · Free</span>
+                <span class="chip chip--free">Grok 4 Fast Reasoning · Free</span>
+                <span class="chip">Grok 4.3</span>
+                <span class="chip">Grok 4.20</span>
+                <span class="chip">Grok 4.20 Reasoning</span>
+                <span class="chip">Grok 4.20 Multi-Agent</span>
+                <span class="chip">Grok Build 0.1</span>
+                <span class="chip">Grok 4.5</span>
+              </div>
+            </div>
+
+            <div class="brand-row card card--elevated">
+              <span class="brand-row__name">Anthropic · 10</span>
+              <div class="brand-row__chips">
+                <span class="chip chip--free">Claude Haiku 4.5 · Free</span>
+                <span class="chip">Claude Sonnet 4.6</span>
+                <span class="chip">Claude Opus 4.6</span>
+                <span class="chip">Claude Opus 4.7</span>
+                <span class="chip chip--free">Claude Sonnet 4.5 · Free</span>
+                <span class="chip">Claude Opus 4.5</span>
+                <span class="chip">Claude Opus 4.1</span>
+                <span class="chip">Claude Sonnet 5</span>
+                <span class="chip">Claude Opus 4.8</span>
+                <span class="chip">Claude Fable 5</span>
+              </div>
+            </div>
+
+            <div class="brand-row card card--elevated">
+              <span class="brand-row__name">OpenAI · 14</span>
+              <div class="brand-row__chips">
+                <span class="chip chip--free">GPT-4o mini · Free</span>
+                <span class="chip">GPT-4o</span>
+                <span class="chip">GPT-4.1 mini</span>
+                <span class="chip">GPT-4.1</span>
+                <span class="chip chip--free">GPT-5 Nano · Free</span>
+                <span class="chip">GPT-5.6 Luna</span>
+                <span class="chip">GPT-5.4 Mini</span>
+                <span class="chip">GPT-5 mini</span>
+                <span class="chip">o3 mini</span>
+                <span class="chip">o3</span>
+                <span class="chip">o3 pro</span>
+                <span class="chip">o4 mini</span>
+                <span class="chip">GPT-5.6 Terra</span>
+                <span class="chip">GPT-5.6 Sol</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
